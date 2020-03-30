@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap");
+
+*{
+  color: #555;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+:root{
+  font-size: 18px;
+  user-select: none;
+
+  --color-primary: hsl(350, 95%, 55%);
+  --border-radius: 2rem;
+}
+
+body{
+  height: 100vh;
+  margin: 0;
+  background-color: hsl(210, 10%, 97%);
+  font-family: Montserrat, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+footer{
+  padding: .3rem 0;
+  color: #777;
+  font-size: .8rem;
+  position: absolute;
+  bottom: 0;
+}
+
+form{
+  width: 100%;
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
+h1{
+  margin: 0;
+  color: #444;
+  font-size: 1.8rem;
+  font-weight: 400;
+  letter-spacing: .1rem;
+}
+
+a{
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+a:hover{
+  border-bottom: 2px solid var(--color-primary);
+}
+
+small{
+  color: #777;
+  font-weight: 700;
+}
+
+button{
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: var(--color-primary);
+  color: #FFF;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  box-shadow: 0 4px 24px -2px hsla(var(--color-primary), 1);
+  border-radius: var(--border-radius);
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+label{
+  margin-bottom: .5rem;
+  font-size: .9rem;
+  font-weight: 700;
+}
+
+input{
+  margin-bottom: 1.5rem;
+  padding: .7rem 1rem;
+  font-size: 1rem;
+  border-radius: .25rem;
+  border: 1px solid #999;
+  outline: none;
+}
+
+.container{
+  width: 600px;
+  padding: 3rem;
+  background-color: #FFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 2px 32px rgba(0, 0, 0, .05);
+  border-radius: var(--border-radius);
+}
+
+@media only screen and (max-width: 768px){
+  body{
+    justify-content: flex-start;
+  }
+
+  h1{
+    font-size: 1.5rem;
+  }
+
+  button{
+    font-size: .8rem;
+  }
+
+  input{
+    padding: .5rem .8rem;
+  }
+
+  .container{
+    width: 90%;
+    margin-top: 1rem;
+    padding: .8rem 1.3rem;
+  }
+}
